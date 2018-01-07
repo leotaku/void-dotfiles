@@ -1,0 +1,15 @@
+!Xresources sets configuration for apps using the Xresources DB
+!xrdb -merge ~/.Xresources
+
+!xautolock: automatic screen locking
+!NOTE: UNRELIABLE AND STUPID USE COMMAND LINE OPTIONS
+Xautolock.locker	: ~/Scripts/lock
+Xautolock.nowlocker 	: ~/Scripts/lock
+Xautolock.time		: 5
+
+!rxvt-unicode: terminal emulator
+!urxvt*font		    : xft:snap:size=10
+!urxvt.letterSpace   : -5
+urxvt*depth		    : 32
+urxvt*background	: rgba:f0f0/f0f0/f0f0/d0d0
+!URxvt.color3       : rgb:00/f0/f0
