@@ -4,7 +4,8 @@ set autoindent
 set smartindent
 set tabstop=4
 set shiftwidth=4
-set expandtab           " turn tab to space
+set softtabstop=0
+set noexpandtab           " dont turn tab to space
 set incsearch
 set nowrap
 set number

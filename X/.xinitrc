@@ -28,4 +28,4 @@ compton -b
 (~/Misc/Galaxy/python-server.sh) &> /dev/null &
 
 #starting wm
-exec xmonad
+exec bspwm
