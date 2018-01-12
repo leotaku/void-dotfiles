@@ -94,3 +94,4 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias xbps-local="xbps-install --repository=hostdir/binpkgs"
 
+export EDITOR="nvim"
