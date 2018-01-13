@@ -21,6 +21,9 @@ xset -b
 # compton composite manager
 compton -b
 
+# set polybar width
+export BAR_WIDTH=30
+
 # MPD daemon start (if no other user instance exists)
 [ ! -s ~/.config/mpd/pid ] && mpd
 

@@ -8,26 +8,26 @@ Xautolock.nowlocker : ~/Scripts/lock
 Xautolock.time		: 10
 
 !rxvt-unicode: terminal emulator
-URxvt.font         :xft:scientifica:size=9
-URxvt.boldFont     :xft:scientifica:size=9
+URxvt.font				: xft:scientifica:size=9, xft:siji:size=9
+URxvt.boldFont     		: xft:scientifica:size=9
 
-URxvt.lineSpace       : 1
-URxvt.letterSpace     : 1
-URxvt.scrollBar       : false
-URxvt.internalBorder  : 4
-URxvt.cursorUnderline : false
-URxvt.geometry        : 60x25
-URxvt.thickness       : 5
-URxvt.titleBar        : true
-URxvt.intensityStyles : false
-Urxvt.perl-lib        : /usr/lib/urxvt/perl/
-Urxvt.perl-ext        : default,matcher
-Urxvt.url-launcher    : /usr/bin/firefox
-URxvt.underlineURLs : true
+URxvt.lineSpace			: 1
+URxvt.letterSpace     	: 1
+URxvt.scrollBar			: false
+URxvt.internalBorder  	: 4
+URxvt.cursorUnderline 	: false
+URxvt.geometry        	: 60x25
+URxvt.thickness       	: 5
+URxvt.titleBar        	: true
+URxvt.intensityStyles 	: false
+Urxvt.perl-lib        	: /usr/lib/urxvt/perl/
+Urxvt.perl-ext        	: default,matcher
+Urxvt.url-launcher    	: /usr/bin/firefox
+URxvt.underlineURLs 	: true
 
-urxvt*depth		    : 32
-urxvt*background	: rgba:f0f0/f0f0/f0f0/d0d0
-!URxvt.color3       : rgb:00/f0/f0
+urxvt*depth		    	: 32
+urxvt*background		: rgba:f0f0/f0f0/f0f0/d0d0
+!URxvt.color3       	: rgb:00/f0/f0
 
 !URxvt.perl-ext-common: ...,font-size
 !URxvt.keysym.C-Up:     font-size:increase
@@ -36,4 +36,4 @@ urxvt*background	: rgba:f0f0/f0f0/f0f0/d0d0
 !URxvt.keysym.C-S-Down: font-size:decglobal
 !URxvt.keysym.C-equal:  font-size:reset
 !URxvt.keysym.C-slash:  font-size:show
-URxvt.perl-ext-common: ...,vtwheel
+URxvt.perl-ext-common: vtwheel
