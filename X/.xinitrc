@@ -19,7 +19,7 @@ xautolock &
 xset -b
 
 # compton composite manager
-compton -b
+#compton -b
 
 # set polybar width
 export BAR_WIDTH=30

@@ -22,6 +22,9 @@ set hidden
 " set statusline=%F%m%r%h%w\ %=%y\ %03v\ \|\ %03l\ \ %p%%
 set laststatus=2
 
+" latex
+let g:tex_flavor = "latex"
+
 " startify
 "autocmd User Startified setlocal cursorline
 

@@ -45,6 +45,11 @@ super + g
 # set the window state
 super + {t,shift + t,s,f}
 	bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
+# todo: fix this shit
+#super + {t,shift + t,s}
+#	xdo id -drs | xargs -L1 transset 1 -i && bspc node -t {tiled,pseudo_tiled,floating}
+#super + f
+#	xdo id -drs | xargs -L1 transset 0 -i && bspc node -t fullscreen
 
 # set the node flags
 super + ctrl + {x,y,z}
@@ -55,8 +60,20 @@ super + ctrl + {x,y,z}
 #
 
 # focus the node in the given direction
-super + {_,shift + }{h,j,k,l}
-	bspc node -{f,s} {west,south,north,east}
+# super + {_,shift + }{h,j,k,l}
+#	bspc query -N -n focused.\!floating && bspc node -{f,s} {west,south,north,east} || bspc node -v {-20 0,0 20,0 -20,20 0}
+super + {_,shift + }h
+	bspc query -N -n focused.\!floating && bspc node -{f,s} west || bspc node -v -20 0
+super + {_,shift + }j
+	bspc query -N -n focused.\!floating && bspc node -{f,s} south || bspc node -v 0 20
+super + {_,shift + }k
+	bspc query -N -n focused.\!floating && bspc node -{f,s} north || bspc node -v 0 -20
+super + {_,shift + }l
+	bspc query -N -n focused.\!floating && bspc node -{f,s} east || bspc node -v 20 0
+
+
+
+
 
 # focus the node for the given path jump
 super + {p,b,comma,period}
@@ -117,5 +134,5 @@ super + alt + shift + {h,j,k,l}
 	bspc node -z {right -20 0,top 0 20,bottom 0 -20,left 20 0}
 
 # move a floating window
-super + {Left,Down,Up,Right}
-bspc node -v {-20 0,0 20,0 -20,20 0}
+#super + {h,j,k,l}
+#	bspc node -v {-20 0,0 20,0 -20,20 0}
