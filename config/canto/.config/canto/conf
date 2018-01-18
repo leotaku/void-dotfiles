@@ -284,7 +284,9 @@
             "maintag:Private Feed for LeOtaku",
             "maintag:Void news",
             "maintag:ArchWiki  - Recent changes [en]",
-            "maintag:Arch Linux: Recent news updates"
+            "maintag:Arch Linux: Recent news updates",
+            "maintag:Recent Commits to void-packages:master",
+            "maintag:Recent Commits to xbps:master"
         ]
     },
     "defaults": {
@@ -340,7 +342,16 @@
         "maintag:Private Feed for LeOtaku": {
             "collapsed": true
         },
+        "maintag:Recent Commits to dotfiles:master": {
+            "collapsed": true
+        },
         "maintag:Recent Commits to liferea:master": {
+            "collapsed": true
+        },
+        "maintag:Recent Commits to void-packages:master": {
+            "collapsed": true
+        },
+        "maintag:Recent Commits to xbps:master": {
             "collapsed": true
         },
         "maintag:Reddit": {

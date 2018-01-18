@@ -11,6 +11,8 @@ compton -b
 
 bspc monitor -d I II III IV V
 
+bspc config click_to_focus button1
+
 bspc config border_width         3
 bspc config window_gap           4
 
