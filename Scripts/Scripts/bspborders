@@ -21,7 +21,7 @@ else
 	RIGHT=$4
 fi
 
-BOTTOM=$[ $BOTTOM + $BAR_WIDTH ]
+BOTTOM=$[ $BOTTOM + $BAR_WIDTH + $BAR_GAP ]
 
 bspc config top_padding 	$TOP
 bspc config bottom_padding 	$BOTTOM
